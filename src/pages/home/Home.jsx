@@ -14,22 +14,22 @@ function Home() {
     <>
       {<Navbar />}
       {/* heroes section */}
-      <div className="flex flex-wrap gap-3 bg-black justify-around px-0 pb-[6rem] ">
+      <div className="flex flex-wrap gap-3 bg-black justify-around px-0 pb-[6rem]">
         <div className="flex flex-col justify-center gap-4  ">
           {/* content container */}
-          <div className="flex flex-col">
-            <h2 className="font-[Bebas Neue] font-normal text-[#FFFFFF] text-[3rem] text-nowrap leading-[0.3rem]">FIND MOVIES</h2>
+          <div className="flex flex-col mx-[2rem]">
+            <h2 className="font-[Bebas Neue] font-normal text-[#FFFFFF] text-[3rem] text-nowrap leading-[0.3rem] mt-[3rem]">FIND MOVIES</h2>
             <h1 className=" flex font-[Bebas Neue] font-bold text-[#FFFFFF]  mt-1.5 lg:text-[4rem] md:text-[3rem] sm:text-[2rem] leading-[5rem] bg-gradient-to-r from-[#2203ff]  to-[#c40D60] bg-clip-text text-transparent mx-2 "> TV SHOWS AND  <span className="mx-3">MORE</span></h1>
           </div>
           <p className="font-normal font-[Inter] mt-7 lg:text-[1.26rem] md:text-[1.16rem]  sm:text-[1.06rem]  m-2 lg:leading-6 md:leading-4 sm:leading-2 text-[#CECECE] bg-black ">Lorem Ipsum has been the industry's standard dummy text <br /> ever since the 1500s, when an unknown printer took a galley <br /> of type and scrambled it to make a type specimen book.</p>
-          <button className="w-[16.4rem] h-[4rem] rounded-[8.43px] border-[1.2px] text-white bg-black flex items-center justify-center gap-2"><img src={icon} alt="" />Watch Tutorial</button>
+          <button className="w-[16.4rem] h-[4rem] rounded-[8.43px] border-[1.2px] text-white bg-black flex items-center justify-center gap-2 mx-2"><img src={icon} alt="" />Watch Tutorial</button>
         </div>
         {/* image container */}
-        <div className="relative flex justify-center items-center lg:justify-start lg:items-startlg:w-1/2 mt-6 lg:mt-0 ">
-          <div className="w-[18rem] lg:w-[29.5rem] h-[26rem] lg:h-[43.7rem]">
+        <div className="relative flex justify-center items-center lg:justify-center lg:items-start lg:w-1/2 mt-6 lg:mt-0  mx-[2rem] mb-4 ">
+          <div className="w-[16.5rem] sm:w-[16.5rem] md:w-[20.5rem] lg:w-[29.5rem] h-[20rem] sm:h-[20rem] md:h-[32.7rem]  lg:h-[43.7rem]   ">
             <img src={image2} alt="Movie Poster 1" className="object-cover w-full h-full" />
           </div>
-          <div className=" absolute w-[16rem] lg:w-[23.4rem] h-[23rem] lg:h-[35.8rem] left-[-9rem] lg:left-[-11rem] top-[3.7rem] lg:top-[12rem] pl-9 border-l-2   border-gray-600 border-b-2 pb-[2rem] " >
+          <div className="absolute w-[16rem] lg:w-[23.4rem] h-[23rem] sm:h-[23rem] md:h-[29.8rem] lg:h-[35.8rem]  left-[-4rem] sm:left-[-4rem] md:left-[-5rem] lg:left-[4rem]  top-[7rem] sm:top-[6rem] md:top-[12rem] lg:top-[12rem] pl-9 border-hidden sm:border-hidden md:border-l-2 lg:border-l-2    border-gray-600 border-b-2 pb-[2rem] " >
             <img src={image1} alt="Movie Poster 2" className=" object-cover w-full h-full" />
           </div>
         </div>

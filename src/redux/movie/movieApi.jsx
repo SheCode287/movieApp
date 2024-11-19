@@ -2,6 +2,8 @@
 
 
 export const apiKey =import.meta.env.VITE_TMDB_API_KEY;
+console.log('API Key:', import.meta.env.VITE_TMDB_API_KEY);
+
 
 export const movieApi = {
   // FETCH  popular MOVIES

@@ -20,7 +20,7 @@ function Explore({apiKey}) {
    
 
   return (
-    <div className="movies-container grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-6">
+    <div className="movies-container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-7 gap-6">
     {movies.length === 0 ? (
         <p>No movies found.</p>
     ) : (
