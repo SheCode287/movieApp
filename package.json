@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/bebas-neue": "^5.1.0",
+    "@fontsource/just-another-hand": "^5.1.0",
     "@reduxjs/toolkit": "^2.3.0",
     "axios": "^1.7.7",
     "flowbite-react": "^0.10.2",

@@ -12,6 +12,7 @@ export const movieApi = {
      `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`);
     return response.data.results;
   },
+  
 // FETCH  upcoming MOVIES
   fetchMovies2 : async(apiKey) =>{
     const response = await axios.get(

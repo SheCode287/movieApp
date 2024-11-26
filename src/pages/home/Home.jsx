@@ -6,23 +6,26 @@ import Navbar from "../../components/Navbar"
 // import Movies from "../movies/Movies"
 import Explore from '../explore/Explore'
 import { ImFire } from "react-icons/im";
-import Discover from "../discover/Discover"
+import Discover from "../discover/Discover";
+import '@fontsource/bebas-neue';
+import '@fontsource/just-another-hand';
+import { apiKey } from "../../redux/movie/movieApi"
 
 function Home() {
   return (
 
-    <>
+    < div className=" w-full bg-red overflow-hidden">
       {<Navbar />}
       {/* heroes section */}
-      <div className="flex flex-wrap gap-3 bg-black justify-around px-0 pb-[6rem]">
+      <div className="flex flex-wrap gap-3 w-screen bg-black justify-around px-0 pb-[6rem]">
         <div className="flex flex-col justify-center gap-4  ">
           {/* content container */}
           <div className="flex flex-col mx-[2rem]">
-            <h2 className="font-[Bebas Neue] font-normal text-[#FFFFFF] text-[3rem] text-nowrap leading-[0.3rem] mt-[3rem]">FIND MOVIES</h2>
-            <h1 className=" flex font-[Bebas Neue] font-bold text-[#FFFFFF]  mt-1.5 lg:text-[4rem] md:text-[3rem] sm:text-[2rem] leading-[5rem] bg-gradient-to-r from-[#2203ff]  to-[#c40D60] bg-clip-text text-transparent mx-2 "> TV SHOWS AND  <span className="mx-3">MORE</span></h1>
+            <h2 style={{fontFamily:'Bebas Neue'}} className= "font-normal text-[#FFFFFF] text-[4rem] sm:text-4xl md:text-4xl lg:text-[4rem]  text-nowrap leading-[1.3rem] sm:leading-[0.3rem] mt-[3rem]">FIND MOVIES</h2>
+            <h1 style={{fontFamily:'Bebas Neue'}} className=" flex font-normal text-[#FFFFFF]  mt-1.5 lg:text-[6.4rem] md:text-[3rem] sm:text-[2rem] leading-[7.7rem] bg-gradient-to-r from-[#2203ff]  to-[#c40D60] bg-clip-text text-transparent  "> TV SHOWS AND  <span className="mx-3">MORE</span></h1>
           </div>
-          <p className="font-normal font-[Inter] mt-7 lg:text-[1.26rem] md:text-[1.16rem]  sm:text-[1.06rem]  m-2 lg:leading-6 md:leading-4 sm:leading-2 text-[#CECECE] bg-black ">Lorem Ipsum has been the industry's standard dummy text <br /> ever since the 1500s, when an unknown printer took a galley <br /> of type and scrambled it to make a type specimen book.</p>
-          <button className="w-[16.4rem] h-[4rem] rounded-[8.43px] border-[1.2px] text-white bg-black flex items-center justify-center gap-2 mx-2"><img src={icon} alt="" />Watch Tutorial</button>
+          <p className="font-normal font-[Inter] mt-7 lg:text-[1.38rem] md:text-[1.16rem]  sm:text-[1.06rem]  mx-7 lg:leading-[1.62rem] md:leading-4 sm:leading-2 text-[#CECECE] bg-black ">Lorem Ipsum has been the industry's standard dummy text <br /> ever since the 1500s, when an unknown printer took a galley <br /> of type and scrambled it to make a type specimen book.</p>
+          <button className="w-[16.31rem] h-[4rem] rounded-[8.43px] border-[1.2px] text-white bg-black flex items-center justify-center gap-2 mx-7"><img src={icon} alt="" />Watch Tutorial</button>
         </div>
         {/* image container */}
         <div className="relative flex justify-center items-center lg:justify-center lg:items-start lg:w-1/2 mt-6 lg:mt-0  mx-[2rem] mb-4 ">
@@ -45,7 +48,7 @@ function Home() {
 
    
   
-        <Explore apiKey={import.meta.env.VITE_TMDB_API_KEY}/>
+        <Explore apiKey={apiKey}/>
        
       </div>
 
@@ -58,11 +61,11 @@ function Home() {
 
    
   
-        <Discover apiKey={import.meta.env.VITE_TMDB_API_KEY}/>
+        <Discover apiKey={apiKey}/>
        
       </div>
       
-    </>
+    </div>
 
   )
 }
